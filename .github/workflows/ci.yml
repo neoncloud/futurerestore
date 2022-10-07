@@ -9,7 +9,12 @@ jobs:
   Windows:
     runs-on: windows-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+          fetch-depth: 0
       - uses: msys2/setup-msys2@v2
       - shell: msys2 {0}
         run: |
-          sh $(GITHUB_WORKSPACE)/futurerestore/futurerestore/.github/workflows/win-build.sh
+          sh D:/a/futurerestore/futurerestore/.github/workflows/win-build.sh
