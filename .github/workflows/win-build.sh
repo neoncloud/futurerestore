@@ -14,8 +14,8 @@ if [ ! -z $1 ]; then
 	fi
 fi
 
-mkdir D:/a/futurerestore_compile
-cd D:/a/futurerestore_compile
+mkdir ./futurerestore_compile
+cd ./futurerestore_compile
 
 set -e
 
