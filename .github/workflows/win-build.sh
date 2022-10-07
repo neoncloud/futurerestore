@@ -14,8 +14,8 @@ if [ ! -z $1 ]; then
 	fi
 fi
 
-mkdir $(GITHUB_WORKSPACE)/futurerestore_compile
-cd $(GITHUB_WORKSPACE)/futurerestore_compile
+mkdir D:/a/futurerestore_compile
+cd D:/a/futurerestore_compile
 
 set -e
 
@@ -197,7 +197,7 @@ cd ..
 #make install
 #cd ..
 
-cd $(GITHUB_WORKSPACE)/futurerestore
+cd D:/a/futurerestore/futurerestore
 ./autogen.sh $STATIC_FLAG
 
 if [ $IS_STATIC == 1 ]; then
