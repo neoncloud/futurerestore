@@ -22,6 +22,6 @@ jobs:
           install: >-
             base-devel
             git
-      - run: |
+      - shell: msys2 {0}
+        run: |
           sh $(GITHUB_WORKSPACE)/futurerestore/futurerestore/.github/workflows/win-build.sh
-        shell: bash
