@@ -67,8 +67,8 @@ sed -i'' 's|ret = DeviceIoControl(client->handle, 0x220195, data, length, data, 
 sed -i'' 's|fopen(savepath, \"w\")|fopen(savepath, \"wb\")|' ./libfragmentzip/libfragmentzip/libfragmentzip.c
 
 # tsschecker windows fixes (fix file corruption)
-sed -i'' 's|fopen(dstPath, \"w\")|fopen(dstPath, \"wb\")|' ./futurerestore/futurerestore/external/tsschecker/tsschecker/download.c
-sed -i'' 's|fopen(fname, \"w\")|fopen(fname, \"wb\")|' ./futurerestore/futurerestore/external/tsschecker/tsschecker/tsschecker.c
+sed -i'' 's|fopen(dstPath, \"w\")|fopen(dstPath, \"wb\")|' D:/a/futurerestore/futurerestore/external/tsschecker/tsschecker/download.c
+sed -i'' 's|fopen(fname, \"w\")|fopen(fname, \"wb\")|' D:/a/futurerestore/futurerestore/external/tsschecker/tsschecker/tsschecker.c
 
 # libinsn windows fixes
 #sed -i'' 's|-fPIC||' ./libinsn/configure.ac # -fPIC flag not supported when compiling for windows
